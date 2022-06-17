@@ -92,6 +92,8 @@ li {
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
+  display: flex;
+  align-items: center;
 }
 
 .link-wrapper {
@@ -541,4 +543,71 @@ li {
 }
 .footer-address {
   margin-top: 15px 0;
+}
+
+.mail-icon {
+  width: 16px;
+  height: 12px;
+  margin: 0 10px 0 0;
+}
+.phone-icon {
+  width: 10px;
+  height: 16px;
+  margin: 0 10px 0 0;
+}
+
+.icon-plate {
+  width: 65px;
+  height: 70px;
+}
+
+.svg-bg {
+  background: #f5f4fa;
+  border-radius: 4px;
+  width: 270px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.social-icon {
+  width: 20px;
+  height: 20px;
+  padding: 12px;
+  border-radius: 50%;
+}
+
+.social-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  gap: 10px;
+}
+
+.icon-company {
+  background: #e5e5e5;
+  border-radius: 4px;
+  width: 270px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.icon-icon {
+  width: 106px;
+  height: 60px;
+  margin-right: 30px;
+  display: flexbox;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  position: absolute;
+  width: 170px;
+  height: 92px;
+
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
 }
