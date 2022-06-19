@@ -572,12 +572,24 @@ li {
   margin-bottom: 30px;
 }
 .social-icon {
-  width: 20px;
-  height: 20px;
-  padding: 12px;
   border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+.social-icon:hover {
+  background-color: var(--accent-color);
 }
 
+.social-icon:hover svg {
+}
+
+.social-icon svg {
+  width: 20px;
+  height: 20px;
+}
 .social-wrap {
   display: flex;
   align-items: center;
@@ -586,28 +598,31 @@ li {
   gap: 10px;
 }
 
-.icon-company {
-  background: #e5e5e5;
-  border-radius: 4px;
-  width: 270px;
-  height: 120px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 30px;
-}
-
-.icon-icon {
-  width: 106px;
-  height: 60px;
-  margin-right: 30px;
-  display: flexbox;
-  flex-wrap: wrap;
-  box-sizing: border-box;
-  position: absolute;
+.company-card {
   width: 170px;
   height: 92px;
-
   border: 1px solid #afb1b8;
   border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-client {
+  width: 106px;
+  height: 60px;
+}
+
+.flex-container {
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.col {
+  border: 1px solid red;
+}
+
+.footer .container {
+  display: flex;
+  gap: 70px;
 }
