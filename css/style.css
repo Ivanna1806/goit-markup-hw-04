@@ -654,10 +654,6 @@ li {
   background-color: #ececec;
 }
 
-.icon-plate:hover {
-  background-color: var(--accent-color);
-  justify-items: center;
-}
 .social-icon {
   border-radius: 50%;
   width: 44px;
@@ -705,9 +701,6 @@ li {
   margin-top: 50px;
 }
 
-.company-card:hover svg {
-  background-color: #2196f3;
-}
 .col {
   color: #ffffff;
   font-size: 14px;
