@@ -6,10 +6,18 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title> 
-  <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css
+
+
+
+  ">
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
     rel="stylesheet" />
   <link rel="stylesheet" href="./css/style.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
 
 </head>
 
@@ -47,8 +55,8 @@
 
     <section class="section container-img">
       <div class="container flex"> 
-        <h1 class="hero-title">Эффeктивное решение <br>для вашего бизнеса</h1>
-        <button class="primary-button">Заказать услугу</button>
+        <h1 class="hero-title animate__animated animate__bounce">Эффeктивное решение <br>для вашего бизнеса</h1>
+        <button data-modal-open class="primary-button">Заказать услугу</button>
       </div>
     </section>
 
@@ -286,10 +294,10 @@
       </div>
       </section>                              
   </main>
-  
 
 
-  <footer class="footer ">
+
+  <footer class="footer">
     <div class="container">
       <div class="col">
         <a href="./index.htm" class="logo">
@@ -304,7 +312,7 @@
           </ul>
       </div>
      <div class="col">
-       <h2>Присоединяйтесь</h2>   
+       <h2 class="">Присоединяйтесь</h2>   
        <div class="social-wrap">
         <span class="social-icon">
           <svg>
@@ -330,7 +338,22 @@
      </div>
     </div>
   </footer>
+  <div class="backdrop is-hidden" data-modal>
+    <div class="modal"> 
+      <div class="modal-control"> 
+       <button type="button" class="modal-open-btn" data-modal-close>  
+         </button>
+      </div> 
+      <div class="modal-content">
 
+      </div>
+    </div>
+   </div>
+  <script src="./button-svg.svg"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="./js/modal.js"></script>
 </body>
 
 </html>
