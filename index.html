@@ -338,14 +338,22 @@
      </div>
     </div>
   </footer>
-  <div class="backdrop is-hidden" data-modal>
+  <div class="backdrop " data-modal>
     <div class="modal"> 
       <div class="modal-control"> 
        <button type="button" class="modal-open-btn" data-modal-close>  
          </button>
       </div> 
       <div class="modal-content">
-
+        <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+        <form class="modal-form">
+        <input type="text" name="user-name" class="modal-input" placeholder="Имя"/>
+        <input type="text" name="user-tel" class="modal-input" placeholder="Телефон"/>
+        <input type="text" name="user-mail" class="modal-input" placeholder="Почта"/>
+        <input type="text" class="coment-input" placeholder="Коментарий"/>
+        <p class="modal-terms">Соглашаюсь с рассылкой и принимаю Условия договора</p>
+        <button type="submit" class="modal-btn">Отправить</button>
+      </form>
       </div>
     </div>
    </div>
