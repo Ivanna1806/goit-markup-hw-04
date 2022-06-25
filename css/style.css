@@ -47,13 +47,11 @@ address {
 }
 
 h3 {
-  font-style: normal;
-  font-weight: 700;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--title-text-color);
+  color: #212121;
 }
 
 h2 {
@@ -111,6 +109,16 @@ li {
 }
 .list {
   display: flex;
+}
+
+.site-nav li a:hover,
+.site-nav li a:focus {
+  color: var(--accent-color);
+}
+
+.auth-nav li a:hover,
+.auth-nav li a:focus {
+  color: var(--accent-color);
 }
 
 .link {
@@ -209,6 +217,10 @@ li {
   margin-right: 0;
 }
 
+.item:hover {
+  color: var(--accent-color);
+}
+
 /*auth-nav*/
 
 .auth-nav {
@@ -268,13 +280,13 @@ li {
 }
 
 .paragraf-element {
-  color: var(--background-color);
-  font-style: normal;
+  color: var(--primary-text-color);
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   width: 270px;
   margin: 10px 0 0 0;
+  letter-spacing: 0.03em;
 }
 
 .work-container {
@@ -336,11 +348,17 @@ li {
 
 .site-button {
   display: flex;
-  gap: 30px;
+  gap: 8px;
   justify-content: center;
   color: var(--title-text-color);
   font-size: 16px;
   line-height: 1.87;
+}
+
+.secondary-button:hover,
+.secondary-button:focus {
+  background-color: var(--accent-color);
+  color: var(--white-color);
 }
 
 .secondary-button {
@@ -650,14 +668,6 @@ li {
   margin-bottom: 30px;
 }
 
-.svg-bg:hover {
-  background-color: #ececec;
-}
-
-.icon-plate:hover {
-  background-color: var(--accent-color);
-  justify-items: center;
-}
 .social-icon {
   border-radius: 50%;
   width: 44px;
@@ -705,9 +715,10 @@ li {
   margin-top: 50px;
 }
 
-.company-card:hover svg {
-  background-color: #2196f3;
+.company-card:hover {
+  color: var(--accent-color);
 }
+
 .col {
   color: #ffffff;
   font-size: 14px;
