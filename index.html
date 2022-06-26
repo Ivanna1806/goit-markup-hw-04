@@ -347,11 +347,59 @@
       <div class="modal-content">
         <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
         <form class="modal-form">
-        <input type="text" name="user-name" class="modal-input" placeholder="Имя"/>
-        <input type="text" name="user-tel" class="modal-input" placeholder="Телефон"/>
-        <input type="text" name="user-mail" class="modal-input" placeholder="Почта"/>
-        <input type="text" class="coment-input" placeholder="Коментарий"/>
-        <p class="modal-terms">Соглашаюсь с рассылкой и принимаю Условия договора</p>
+            <div class="modal-field">
+                <label class="modal-label">Имя</label>
+                <input 
+                  tupe="text"
+                  name="user-name"
+                  class="modal-input"
+                  required
+                />
+                
+              </div>
+              <div class="modal-field">
+                  <label class="modal-label" for="user-tel">Телефон</label>
+                  <input
+                    tupe="text"
+                    name="user-tel"
+                    class="modal-input"
+                    required
+                    minlength="10"
+                    title="+380 (96) 111 22 33"
+                    pattern="[\+]\d{3}\s[\(]\d{2}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
+                    id="user-tel"
+                    />
+                  <svg class="input-icon">
+                      <use href="./icon/symbol-defs.svg#icon-person-svg"></use>
+                  </svg> 
+                </div>
+              <div class="modal-field">
+                <label class="modal-label" for="user-mail">Почта</label>
+                <input 
+                  type="text"
+                  name="user-mail"
+                  class="modal-input"
+                  />
+                  <svg class="input-icon">
+                    <use href="./icon/symbol-defs.svg#icon-person-svg"></use>
+                </svg> 
+             </div>
+
+              <div class="modal-field">
+                <label class="modal-label" for="text">Коментарий</label>
+                <textarea
+                  name="modal-text"
+                  id="modal-text"
+                  class="modal-text-area"
+                  placeholder="Введите текст"
+                ></textarea>
+              </div>
+            
+              <div class="modal-chekbox">
+                <label for="html" class="modal-terms">Соглашаюсь с рассылкой и принимаю Условия договора</label>
+                <input type="checkbox" name="" id="">
+              </div>
+    
         <button type="submit" class="modal-btn">Отправить</button>
       </form>
       </div>
